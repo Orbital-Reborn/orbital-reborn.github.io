@@ -6,7 +6,7 @@ fetch(navUrl)
     .then(data => {
         document.getElementById('nav-placeholder').innerHTML = data;
         
-        // If we are in the pages folder, adjust nav links to point to root
+        // stupid case sensitivity
         if (isInPages) {
             const navLinks = document.querySelectorAll('#nav-placeholder a');
             navLinks.forEach(link => {
