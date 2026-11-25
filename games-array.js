@@ -5,4 +5,5 @@ const games_list = [
 { name: "Learn to fly 3", url: "assignments/swfloader.html?swf=/swf/Learn-To-Fly-3.swf" },
 { name: "Learn to fly 2", url: "assignments/swfloader.html?swf=/swf/Learn-To-Fly-2.swf" },
 { name: "Learn to fly 1", url: "assignments/swfloader.html?swf=/swf/Learn-To-Fly-1.swf" },
+{ name: "Burrito Bison", url: "assignments/BurritoBison-main/index.html" },
 ];
