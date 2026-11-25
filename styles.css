@@ -94,7 +94,7 @@ body{
 }
 .centered iframe {
   width: 100%;
-  max-width: 1280px;
+  max-width: clamp(800px, 75vw, 1600px);
   aspect-ratio: 1600 / 900; /* Keeps the exact 16:9 ratio as it shrinks */
   border: none;
   display: block;
