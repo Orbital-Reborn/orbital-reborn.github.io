@@ -17305,7 +17305,7 @@ window.onload=function()
 				},
 				function(){
 					Game.Launch();
-					if (top!=self && false) Game.ErrorFrame();
+					if (false && false) Game.ErrorFrame();
 					else
 					{
 						console.log('[=== '+choose([
