@@ -51,11 +51,20 @@ body{
     transform: translateY(5px);
     box-shadow: inset 0 12px 8px rgba(0, 0, 0, 0.2);
 }
+
+#foot-placeholder {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    
+  margin-top: auto;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column; /* keeps YouTube and Discord stacked vertically */
+  gap: 8px;
+  padding: 16px;
 }
 .social-item {
     display: flex;
@@ -104,4 +113,20 @@ body{
 .centered #iframe:fullscreen {
   width: 100vw;
   height: 100vh;
+}
+
+#games-grid {
+  /* Switches to flexbox so rows wrap naturally */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers partial rows automatically */
+  
+  width: 100%;
+  max-width: 1200px; /* Keeps it from getting too wide on large screens */
+  gap: 12px;
+}
+
+#games-grid button{
+    width: 100px;
+    aspect-ratio: 1/1;
 }

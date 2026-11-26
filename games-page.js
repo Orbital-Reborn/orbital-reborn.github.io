@@ -1,7 +1,7 @@
     const params = new URLSearchParams(window.location.search);
     const gameIndex = params.get("game");
     const selectedGame = games_list[gameIndex];
-
+    const title = document.getElementById('tab-title');
     const heading = document.getElementById('output');
     const iframe = document.getElementById('game-frame');
     const FullscreenButton = document.getElementById('Fullscreen-button')
@@ -11,6 +11,7 @@ const baseHeight = iframe.offsetHeight;
 
     if (selectedGame) {
       heading.textContent = selectedGame.name;
+title.textContent = `Orbital Reborn | playing ${selectedGame.name}`;
       iframe.src = selectedGame.url;
     } else {
       heading.textContent = 'No valid game found in URL';
