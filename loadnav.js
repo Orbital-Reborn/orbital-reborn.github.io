@@ -1,4 +1,3 @@
-const isInPages = window.location.pathname.includes('/pages/');
 const navUrl = isInPages ? '../navbar.html' : 'navbar.html';
 
 fetch(navUrl)
