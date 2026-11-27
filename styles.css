@@ -58,13 +58,14 @@ body{
 }
 
 .social-links {
-    
+  position: fixed;
   margin-top: auto;
   align-self: flex-start;
   display: flex;
   flex-direction: column; /* keeps YouTube and Discord stacked vertically */
   gap: 8px;
-  padding: 16px;
+  padding: 8px;
+  bottom: 0;
 }
 .social-item {
     display: flex;
@@ -105,7 +106,7 @@ body{
 .centered iframe {
   width: 100%;
   max-width: clamp(325px, 75vw, 1600px);
-  aspect-ratio: 1600 / 900; /* Keeps the exact 16:9 ratio as it shrinks */
+  aspect-ratio: 1600 / 900;
   border: none;
   display: block;
 }
@@ -116,13 +117,12 @@ body{
 }
 
 #games-grid {
-  /* Switches to flexbox so rows wrap naturally */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers partial rows automatically */
+  justify-content: center;
   
   width: 100%;
-  max-width: 1200px; /* Keeps it from getting too wide on large screens */
+  max-width: 1200px;
   gap: 12px;
 }
 
